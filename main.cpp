@@ -49,11 +49,11 @@ int main()
         //cout<<"XX"<<j<<"="<<XX[k]<<endl;
         //cout<<"YY"<<j<<"="<<YY[k]<<endl;
 
-        num[j]=exp(-J.imag()*2*M_PI/0.000488*sqrt(pow(d,2)+pow(XX[j],2)+pow(YY[j],2)));
+        num[j]=exp(-J*2.0*M_PI/0.000488*sqrt(pow(d,2)+pow(XX[j],2)+pow(YY[j],2)));
 
 
         //den[j]=sqrt(pow(d,2)+pow(XX[j],2)+pow(YY[j],2));
-        //g[j]=J.imag()/0.000488*num[j]/den[j];
+        //g[j]=J/0.000488*num[j]/den[j];
 
        //printf("The sqrt value for is %5.10d\n",num[j]);
         cout << "numerator of" <<j<<"is"<<num[j]<< '\n';
